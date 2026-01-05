@@ -51,3 +51,10 @@ Mô hình trả về 9 tensor đầu ra tương ứng với 3 tầng Feature Pyr
 *   **Memory Management:** Sử dụng các Canvas đối tượng tĩnh (`stageCanvas`, `detCanvas`, `alignCanvas`) để tái sử dụng bộ nhớ, tránh việc trình duyệt thực hiện Garbage Collection liên tục gây giật lag (stuttering).
 *   **Execution Backend:** Cấu hình `executionProviders: ['wasm']` kết hợp với `graphOptimizationLevel: 'all'` để tận dụng tối đa tập lệnh SIMD trên CPU thông qua WebAssembly, đảm bảo tốc độ thực thi tiệm cận môi trường Native.
 *   **Asynchronous Processing:** Toàn bộ Pipeline được thiết kế bất đối xứng (async/await) để không gây nghẽn luồng xử lý giao diện (Main UI Thread).
+<img width="1028" height="813" alt="image" src="https://github.com/user-attachments/assets/4b685d14-d89d-41be-911d-89d07c30bf04" />
+<img width="1028" height="813" alt="image" src="https://github.com/user-attachments/assets/3f50eff3-0380-4396-83bd-0f65d3daef01" />
+
+
+
+
+
