@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InsightFace Edge Pro</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #fafafa; }
+        .result-container { display: flex; justify-content: center; gap: 40px; margin-top: 20px; }
+        #alignedResult { border: 2px solid #000; width: 112px; height: 112px; }
+        pre { background: #333; color: #fff; padding: 20px; text-align: left; display: inline-block; border-radius: 8px; }
+        img { max-width: 400px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h2>InsightFace Edge - Production Test</h2>
+    <input type="file" id="fileInput" disabled>
+    <div class="result-container">
+        <div><p>Original</p><img id="originalPreview"></div>
+        <div><p>Aligned (112x112)</p><canvas id="alignedResult" width="112" height="112"></canvas></div>
+    </div>
+    <pre id="output">Ready...</pre>
+    <script src="./src/main.ts" type="module"></script>
+</body>
+</html>
